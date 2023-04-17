@@ -111,7 +111,7 @@ svg {
 }
 
 #header h2 span {
-  color: #ffa69e;
+  color: #ffffff;
   border-bottom: 2px solid #09dbdb;
   padding-bottom: 6px;
 }
@@ -197,7 +197,7 @@ svg {
   height: 2px;
   bottom: -4px;
   left: 0;
-  background-color: #ffa69e;
+  background-color: #ffffff;
   visibility: hidden;
   width: 0px;
   transition: all 0.3s ease-in-out 0s;
