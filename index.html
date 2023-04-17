@@ -658,13 +658,22 @@
   <script src="assets/vendor/typed.js/typed.min.js"></script>
 
   <script type="text/javascript">
+    var strings = ["Driven", "Collaborative", "Innovative", "Motivated", "Adaptable", "Goal-oriented", "Tech-savvy", "Problem-solver", "Tenacious", "Proactive", "Fast-learner", "Strategic", "Focused", "Creative", "Results-driven", "Analytical", "Ambitious", "Detail-oriented", "Empathetic", "Entrepreneurial", "Resourceful", "Resilient", "Self-motivated", "Strong communicator", "Visionary"];
+  
     var typed = new Typed('.typing',{
-      strings: ["Student", "Developer"],
+      strings: strings,
       loop: true,
       typeSpeed: 65,
-      backSpeed: 65
+      backSpeed: 65,
+      smartBackspace: true,
+      shuffle: true,
+      onComplete: function(self) {
+        self.shuffleStrings(strings);
+      }
     });
   </script>
+  
+  
 
 
 
