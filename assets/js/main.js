@@ -151,3 +151,10 @@
 })(jQuery);
 
 
+
+// Wait for the page to load
+window.addEventListener("load", function() {
+  // Hide the loader and display the content
+  document.querySelector(".loader-wrapper").style.display = "none";
+  document.querySelector(".content").style.display = "block";
+});
