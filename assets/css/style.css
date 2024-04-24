@@ -240,14 +240,33 @@ svg {
   right: 15px;
   top: 15px;
   z-index: 9998;
-  border: 0;
+  border: none;
   background: none;
   font-size: 24px;
-  transition: all 0.4s;
   outline: none !important;
   line-height: 1;
   cursor: pointer;
   text-align: right;
+  color: #fff; /* Ensure the button color is white */
+}
+
+.mobile-nav-toggle .bar {
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+.mobile-nav-toggle.active .bar:first-child {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.mobile-nav-toggle.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.mobile-nav-toggle.active .bar:last-child {
+  transform: translateY(-8px) rotate(-45deg);
 }
 
 .mobile-nav-toggle i {
@@ -316,6 +335,7 @@ svg {
 .mobile-nav-active .mobile-nav-toggle i {
   color: #fff;
 }
+
 
 /* Header Top */
 #header.header-top {
@@ -427,8 +447,8 @@ section .container {
   flex-wrap: wrap;
   justify-content: left;
   align-items: flex-start;
-  margin-top: 50px;
-  padding-top: 50px;
+  margin-top: 0px;
+  padding-top: 0px;
 }
 
 .about-me img {
@@ -440,7 +460,7 @@ section .container {
 
 .about-me .content {
   flex: 1;
-  padding-top: 100px;
+  padding-top: 0px;
   margin: 0;
   background: #09203a;
   border-radius: 5px;
@@ -1198,4 +1218,5 @@ section .container {
     transform: translateX(-50%);
   }
 }
+
 
