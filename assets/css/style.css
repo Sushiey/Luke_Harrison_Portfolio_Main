@@ -78,7 +78,7 @@ svg {
 #header {
   transition: ease-in-out 0s;
   position: relative;
-  height: 90vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   z-index: 997;
@@ -91,7 +91,7 @@ svg {
 
 #header h1 {
   font-size: 48px;
-  margin-top: 150px;
+  margin-top: 0px;
   padding: 0;
   line-height: 1;
   font-weight: 700;
